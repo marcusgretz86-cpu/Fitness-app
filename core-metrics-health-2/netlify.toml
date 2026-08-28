@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+# SPA fallback -- this app is a single-page React app, so any path that
+# isn't a real file or a /api/* function call should serve index.html and
+# let React Router-style client-side navigation (well, this app's own tab
+# state) take over.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = { Role = ["!api"] }

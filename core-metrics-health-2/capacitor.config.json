@@ -1,0 +1,12 @@
+{
+  "appId": "com.coremetrics.health",
+  "appName": "Core Metrics Health",
+  "webDir": "dist",
+  "backgroundColor": "#F2F3F4",
+  "ios": {
+    "contentInset": "always"
+  },
+  "android": {
+    "backgroundColor": "#F2F3F4"
+  }
+}
